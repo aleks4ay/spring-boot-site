@@ -1,0 +1,10 @@
+.idea/*
+lib/*
+out/*
+target/*
+*.iml
+log/*
+*.patch
+*.html
+---1---/
+
