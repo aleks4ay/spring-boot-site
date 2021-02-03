@@ -1,0 +1,31 @@
+<html>
+<body>
+<div> Customer Manager </div>
+
+<a href="/customer_add">New customer</a>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Address</th>
+        <th>Action</th>
+    </tr>
+    {{#customers}}
+    <tr>
+        <div>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{address}}</td>
+            <td>
+                <a href="delete_customer?id={{id}}">Delete</a> &nbsp; &nbsp;
+                <a href="update_customer?id={{id}}">Update</a>
+            </td>
+        </div>
+    </tr>
+    {{/customers}}
+</table>
+</body>
+</html>
